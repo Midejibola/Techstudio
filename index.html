@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {},
+            spacing: {
+              128: "32rem",
+              144: "36rem",
+            },
+            borderRadius: {
+              "4xl": "2rem",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <nav class="flex items-center justify-between bg-blue-900 p-5 text-white">
+      <div>
+        <img src="/assets/favicon-32x32.png" alt="logo" />
+      </div>
+      <ul class="flex gap-5">
+        <li>About us</li>
+        <li>course</li>
+        <li>FAQ</li>
+        <li>contact us</li>
+      </ul>
+      <div>
+        <button class="p-3 bg-blue-500 rounded">Sign in</button>
+      </div>
+    </nav>
+  </body>
+</html>
